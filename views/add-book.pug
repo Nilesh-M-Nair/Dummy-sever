@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{docTitle}
+        link(rel="stylesheet", href="/css/home.css")
+    body
+        nav.home-navbar
+            ul.home-navbar__itemlist
+                li.item
+                    a.active(href="/home") Home
+                li.item
+                    a.active(href="/add-book") Add book
+
+        main    
+            .gird
+                form.home-form(action="/add-book", method ='POST')
+                    input.home-form__input(name = 'title', type="text")
+                    button.home-form__button Add book
